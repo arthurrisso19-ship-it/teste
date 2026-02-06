@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevLogin</title>
+  </head>
+  <body>
+     <script src="./script.js"></script>
+      <link rel="stylesheet" href="background.jpg" />
+    </div>
+
+
+      <div id="a">
+        <h1>LOGIN</h1>
+      <form>
+        
+        <div class="caixa-formulario">
+          <button type="submit" class="brbr">
+          <input type="text" placeholder="Nome de Usuário"id="nome" required/>
+          </button>
+          <div class="blz">
+          <i class="bx bxs-user"></i>
+        </div>
+    
+          <button type="submit" class="brbr">
+           <input type="password" placeholder="Senha" id="senha" required />
+          </button>
+          </div>
+        
+        <div class="caixa-formulario">
+          <div class="blz">
+          <i class="bx bx-lock-alt" id="senhas"onclick="mostrarsenha()"></i>
+          </div>
+          </div>
+             <button type="submit" onclick="logar(); return false">Entrar</a></button>
+          </form>
+          <script>
+          function logar(){
+            var login = document.getElementById('nome').value;
+            var senha = document.getElementById('senha').value;
+            if (login == 'Arthur' && senha == 'arthurrisso11')
+              location.href= "https://arthurrisso19-ship-it.github.io/projeto/"
+            else{
+              alert('Usuário ou senha inválidos!')
+            }
+            }
+
+
+
+
+          </script>
+  </body>
+</html>
